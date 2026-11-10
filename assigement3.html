@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/10456/10456439.png" type="image/x-icon">
+    <title>Assigement 4</title>
+    <style>
+      .border {
+        border: 3px solid black;
+      }
+      body {
+        /* background-color: #0f172A; */
+        font-family: Arial, Helvetica, sans-serif;
+        /* color: #FFFFFF; */
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+
+      #guidelines {
+        margin-bottom: 2px;
+        margin-left: 10px;
+      }
+
+      #navbar {
+        color: aliceblue;
+        background-color: blue;
+        height: 25px;
+        width: 100%;
+        height: 50px;
+        text-decoration: none;
+        display: flex;
+        transition: all 1s ease 0.1s;
+      }
+      #navbar:hover {
+        background-color: navy;
+      }
+      #navbar:active {
+        background-color: coral;
+      }
+
+      #navbar h2 {
+        margin: 10px 20px;
+      }
+      #navbar ul {
+        display: flex;
+        margin-left: auto;
+        gap: 20px;
+        margin-right: 40px;
+        text-decoration: none;
+        transition: all 1s ease 0.1s;
+      }
+      #navbar ul li a {
+        color: aliceblue;
+        text-decoration: none;
+        transition: all 1s ease 0.1s;
+      }
+      #navbar ul li a:hover {
+        background-color: coral;
+      }
+      #navbar ul li a:active {
+        background-color: lightblue;
+      }
+      .Hero {
+        padding: 45px 25px;
+      }
+      #Hero-text {
+        font-size: 50px;
+        margin-bottom: 10px;
+      }
+      #Hero-text1 {
+        font-size: 45px;
+        margin-bottom: 15px;
+        color: orange;
+      }
+      .Hero-text p {
+        font-size: 15px;
+      }
+      div img {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background-color: #c9e0ff;
+        /* object-fit: contain; */
+        position: absolute;
+        top: 150px;
+        left: 1150px;
+      }
+
+      .aboutme {
+        margin-left: 10px;
+      }
+      .aboutme h2 {
+        /* border: 1px solid black ; */
+        width: 140px;
+        padding-left: 10px;
+        transition: all,1s ease,0.2s;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+      .aboutme h2:hover {
+        background-color: navy;
+        color: whitesmoke;
+      }
+      .aboutme h2:active {
+        background-color: coral;
+        color: whitesmoke;
+      }
+
+      .myskills {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 20px;
+        transition: all 1s ease 0.1s;
+        border: navy;
+      }
+      .myskills:hover {
+        background-color: navy;
+      }
+      .myskills:active {
+        background-color: coral;
+      }
+
+      #skill {
+        /* border: 1px solid black; */
+        text-align: center;
+        width: 450px;
+        background-color: blue;
+        margin: 10px 10px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        color: whitesmoke;
+        border-color: navy;
+        transition: all 1s ease 0.1s;
+      }
+      #skill :hover {
+        background-color: navy;
+      }
+      #skill :active {
+        background-color: coral;
+      }
+      #aa {
+        margin-left: 10px;
+        width: 140px;
+        padding-left: 10px;
+        transition: all, 1s ease,0.1s;
+        box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+      #aa:hover {
+        background-color: navy;
+        color: whitesmoke;
+      }
+      #aa:active {
+        background-color: coral;
+        color: whitesmoke;
+      }
+
+      #project1 {
+        /* border: 1px solid black; */
+        text-align: center;
+        width: 800px;
+        margin-left: 400px;
+        padding: 10px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        transition: all 1s ease 0.1s;
+      }
+      #project2 {
+        /* border: 1px solid black; */
+        text-align: center;
+        margin-top: 10px;
+        width: 800px;
+        margin-left: 400px;
+        padding: 10px 10px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        transition: all 1s ease 0.1s;
+      }
+      #project1:hover {
+        background-color: lightskyblue;
+      }
+      #project1:active {
+        background-color: coral;
+        color: whitesmoke;
+      }
+      #project2:hover {
+        background-color: lightskyblue;
+      }
+      #project2:active {
+        background-color: coral;
+        color: whitesmoke;
+      }
+
+      .contactme {
+        text-align: center;
+        /* border: 1px solid black; */
+        width: 600px;
+        margin-left: 500px;
+        padding: 10px 10px;
+        border-color: navy;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        transition: all 1s ease 0.1s;
+      }
+      .contactme:hover {
+        background-color: lightskyblue;
+      }
+      .contactme h5 {
+        margin-right: 120px;
+        margin-bottom: 10px;
+      }
+      button {
+        width: 170px;
+        margin: 10px 10px;
+        background-color: blue;
+        color: whitesmoke;
+        transition: all 1s ease 0.1s;
+      }
+      button:hover {
+        background-color: navy;
+      }
+      button:active {
+        background-color: coral;
+        color: whitesmoke;
+      }
+      #bottom {
+        background-color: blue;
+        color: whitesmoke;
+        height: 50px;
+        width: 100%;
+        text-align: center;
+        transition: all 1s ease 0.1s;
+      }
+      #bottom:hover {
+        background-color: navy;
+      }
+      #bottom:active {
+        background-color: coral;
+        color: whitesmoke;
+      }
+      #bottom p {
+        margin: 10px;
+        margin-bottom: 10px;
+        padding-top: 15px;
+        margin-bottom: 10px;
+      }
+
+    #back-to-top {
+        border: 1px solid black;
+        background-color: blue;
+        margin-top: 20px;
+        margin-left: 1300px;
+        border-radius: 10px;
+        width: 130px;
+        height: 30px;
+        position: fixed;
+        top: 600px;
+       text-align: center;
+       padding-top: 10px;
+       color: whitesmoke;
+       transition: all 0.6s ease-in-out;
+
+      }
+     #back-to-top:hover {
+        background-color: navy;
+        transform: scale(1.5);
+      }
+     #back-to-top:active {
+        background-color: coral;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="border">
+      <header>
+        <h2 id="guidelines">Guidelines to Students</h2>
+        <nav id="navbar">
+          <h2>My Portfolio</h2>
+          <ul>
+            <li id="white"><a href="About">About</a></li>
+            <li id="white"><a href="Skills">Skills</a></li>
+            <li id="white"><a href="Projects">Projects</a></li>
+            <li id="white"><a href="Contacts">Contacts</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section>
+        <div class="Hero">
+          <h1 id="Hero-text">Hi, I am</h1>
+          <h1 id="Hero-text1">Full Stack Developer</h1>
+          <p>
+            B.Sc. Computer Science student | Learning Python & Web Development.
+          </p>
+        </div>
+
+        <div id="img">
+          <img src="lakshay.png" alt="My Image" />
+        </div>
+      </section>
+
+      <section>
+        <div class="aboutme">
+          <h2>About Me</h2>
+          <p>
+            Hello! My name is Lakshay. I am currently pursuing B.Sc. Computer
+            Science at K.R. Mangalam University. I am a beginner web developer
+            and passionate about learning new technologies. I enjoy creating
+            interactive and responsive web pages. I am currently learning HTML,
+            CSS, JavaScript and Python. My goal is to become a skilled software
+            developer and build creative projects.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2 id="aa">My Skills</h2>
+        <div class="myskills">
+          <div id="skill">
+            <h4>HTML</h4>
+            <p>Basic Knowledge</p>
+          </div>
+          <div id="skill">
+            <h4>CSS</h4>
+            <p>Beginner</p>
+          </div>
+          <div id="skill">
+            <h4>JavaScript</h4>
+            <p>Currently Learning</p>
+          </div>
+          <div id="skill">
+            <h4>Power BI</h4>
+            <p>Basic knowledge</p>
+          </div>
+          <div id="skill">
+            <h4>Python</h4>
+            <p>Learning</p>
+          </div>
+          <div id="skill">
+            <h4>Git & GitHub</h4>
+            <p>Learning</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 id="aa">My Projects</h2>
+        <div class="project">
+          <div id="project1">
+            <h4>Personal Portfolio Website</h4>
+            <p>My personal website using HTML and CSS.</p>
+          </div>
+          <div id="project2">
+            <h4>Calculator</h4>
+            <p>A calculator UI built using HTML and CSS.</p>
+          </div>
+          <div id="project2">
+            <h4>Power BI Dashboard</h4>
+            <p>A beginner data analytics project</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 id="aa">Contact Me</h2>
+        <div class="contactme">
+          <div id="name">
+            <h5>Name:</h5>
+            <input type="text" placeholder="Enter your name" />
+          </div>
+          <div id="Email">
+            <h5>Email:</h5>
+            <input type="email" placeholder="Enter your email" />
+          </div>
+          <div id="Message">
+            <h5>Message:</h5>
+            <input type="text" placeholder="Write your Message" />
+          </div>
+          <div id="button">
+            <button  type="sumit"><p>Send</p></button>
+          </div>
+        </div>
+      </section>
+
+      <div id="bottom"><p>@2025Lakshay All rights reserved</p></div>
+
+<a href="#" id="back-to-top">Back To Top</a>
+    </div>
+  </body>
+</html>
